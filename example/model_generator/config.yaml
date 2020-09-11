@@ -1,5 +1,6 @@
 OGM:
   type: object
+  modelDirectory: src/models
   properties:
     structuredMessage:
       required: true
@@ -25,6 +26,7 @@ OGM:
 Testing:
   path: user
   type: object
+  modelDirectory: src/models
   properties:
     isFavourite:
       ignore: true
@@ -43,6 +45,7 @@ Testing:
 UserProfileData:
   path: user/profile
   type: object
+  modelDirectory: src/models
   properties:
     firstName:
       required: true
@@ -79,6 +82,7 @@ UserProfileData:
         type: Person
 Person:
   path: user/person/
+  modelDirectory: src/models
   type: object
   properties:
     firstName:
@@ -90,6 +94,7 @@ Person:
 Gender:
   path: user/person/
   type: enum
+  modelDirectory: src/models
   properties:
     MALE:
       value: _mAl3
@@ -109,9 +114,11 @@ Gender:
       value: GENDER_lap
 Duration:
   path: data/custom/
+  modelDirectory: src/models
   type: custom
 DurationFromToJson:
   path: data/custom/
+  modelDirectory: src/models
   type: custom_from_to_json
 
 
