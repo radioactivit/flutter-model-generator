@@ -24,6 +24,8 @@ UserModel:
       type: dynamic
     isLoggedIn:
       type: bool
+    birthday:
+      type: date
     roles:
       type: array
       items:
